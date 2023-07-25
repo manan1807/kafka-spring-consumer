@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - LibraryEventListenerApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>LibraryEventListenerApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.libraryeventlistener.html">com.example.libraryeventlistener</a> &gt; LibraryEventListenerApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.118s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">contextLoads()</td>
+<td class="success">2.118s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>15:53:40.721 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+15:53:40.761 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+15:53:40.850 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.libraryeventlistener.LibraryEventListenerApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+15:53:40.881 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.libraryeventlistener.LibraryEventListenerApplicationTests], using SpringBootContextLoader
+15:53:40.893 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.libraryeventlistener.LibraryEventListenerApplicationTests]: class path resource [com/example/libraryeventlistener/LibraryEventListenerApplicationTests-context.xml] does not exist
+15:53:40.894 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.libraryeventlistener.LibraryEventListenerApplicationTests]: class path resource [com/example/libraryeventlistener/LibraryEventListenerApplicationTestsContext.groovy] does not exist
+15:53:40.895 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.libraryeventlistener.LibraryEventListenerApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:53:40.899 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.libraryeventlistener.LibraryEventListenerApplicationTests]: LibraryEventListenerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:53:41.202 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.libraryeventlistener.LibraryEventListenerApplicationTests]
+15:53:41.423 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [E:\projects\library-event-listener\build\classes\java\main\com\example\libraryeventlistener\LibraryEventListenerApplication.class]
+15:53:41.426 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.libraryeventlistener.LibraryEventListenerApplication for test class com.example.libraryeventlistener.LibraryEventListenerApplicationTests
+15:53:41.687 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.libraryeventlistener.LibraryEventListenerApplicationTests]: using defaults.
+15:53:41.688 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+15:53:41.755 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5bbbdd4b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@438bad7c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@25230246, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4fdf8f12, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4a8b5227, org.springframework.test.context.support.DirtiesContextTestExecutionListener@54f5f647, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6979efad, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5a6d5a8f, org.springframework.test.context.event.EventPublishingTestExecutionListener@4a67318f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@315ba14a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@17f9344b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@27f0ad19, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@54e81b21, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@38d5b107, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6650813a]
+15:53:41.775 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@5bf61e67 testClass = LibraryEventListenerApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2c1dc8e testClass = LibraryEventListenerApplicationTests, locations = '{}', classes = '{class com.example.libraryeventlistener.LibraryEventListenerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@3e34ace1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7829b776, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@61bcd567, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@9ed238c, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@773cbf4f, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@1fd14d74], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.13)
+
+2023-07-16 15:53:42.851  INFO 9760 --- [    Test worker] e.l.LibraryEventListenerApplicationTests : Starting LibraryEventListenerApplicationTests using Java 17.0.5 on DESKTOP-751T19K with PID 9760 (started by DELL in E:\projects\library-event-listener)
+2023-07-16 15:53:42.853 DEBUG 9760 --- [    Test worker] e.l.LibraryEventListenerApplicationTests : Running with Spring Boot v2.7.13, Spring v5.3.28
+2023-07-16 15:53:42.855  INFO 9760 --- [    Test worker] e.l.LibraryEventListenerApplicationTests : The following 1 profile is active: &quot;local&quot;
+2023-07-16 15:53:44.916  INFO 9760 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-16 15:53:44.942  INFO 9760 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2023-07-16 15:53:46.207 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : Driver class org.h2.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@6d5380c2
+2023-07-16 15:53:46.593 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - configuration:
+2023-07-16 15:53:46.613 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension................................false
+2023-07-16 15:53:46.614 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : autoCommit................................true
+2023-07-16 15:53:46.615 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : catalog................................none
+2023-07-16 15:53:46.615 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : connectionInitSql................................none
+2023-07-16 15:53:46.616 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : connectionTestQuery................................none
+2023-07-16 15:53:46.617 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : connectionTimeout................................30000
+2023-07-16 15:53:46.618 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : dataSource................................none
+2023-07-16 15:53:46.618 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : dataSourceClassName................................none
+2023-07-16 15:53:46.618 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI................................none
+2023-07-16 15:53:46.620 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : dataSourceProperties................................{password=&lt;masked&gt;}
+2023-07-16 15:53:46.621 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : driverClassName................................&quot;org.h2.Driver&quot;
+2023-07-16 15:53:46.621 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : exceptionOverrideClassName................................none
+2023-07-16 15:53:46.622 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : healthCheckProperties................................{}
+2023-07-16 15:53:46.622 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry................................none
+2023-07-16 15:53:46.622 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : idleTimeout................................600000
+2023-07-16 15:53:46.623 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout................................1
+2023-07-16 15:53:46.623 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries................................false
+2023-07-16 15:53:46.624 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : jdbcUrl................................jdbc:h2:mem:07716aee-1219-43c5-9cde-33e3baca827c;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+2023-07-16 15:53:46.628 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : keepaliveTime................................0
+2023-07-16 15:53:46.628 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold................................0
+2023-07-16 15:53:46.629 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : maxLifetime................................1800000
+2023-07-16 15:53:46.629 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : maximumPoolSize................................10
+2023-07-16 15:53:46.629 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : metricRegistry................................none
+2023-07-16 15:53:46.630 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory................................none
+2023-07-16 15:53:46.630 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : minimumIdle................................10
+2023-07-16 15:53:46.631 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : password................................&lt;masked&gt;
+2023-07-16 15:53:46.631 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : poolName................................&quot;HikariPool-1&quot;
+2023-07-16 15:53:46.632 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : readOnly................................false
+2023-07-16 15:53:46.632 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : registerMbeans................................false
+2023-07-16 15:53:46.633 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : scheduledExecutor................................none
+2023-07-16 15:53:46.633 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : schema................................none
+2023-07-16 15:53:46.636 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : threadFactory................................internal
+2023-07-16 15:53:46.636 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : transactionIsolation................................default
+2023-07-16 15:53:46.636 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : username................................&quot;sa&quot;
+2023-07-16 15:53:46.637 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : validationTimeout................................5000
+2023-07-16 15:53:46.637  INFO 9760 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-16 15:53:47.506 DEBUG 9760 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:07716aee-1219-43c5-9cde-33e3baca827c user=SA
+2023-07-16 15:53:47.509  INFO 9760 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-16 15:53:47.623 DEBUG 9760 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2023-07-16 15:53:47.629 DEBUG 9760 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:mem:07716aee-1219-43c5-9cde-33e3baca827c user=SA
+2023-07-16 15:53:47.631 DEBUG 9760 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn2: url=jdbc:h2:mem:07716aee-1219-43c5-9cde-33e3baca827c user=SA
+2023-07-16 15:53:47.633 DEBUG 9760 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn3: url=jdbc:h2:mem:07716aee-1219-43c5-9cde-33e3baca827c user=SA
+2023-07-16 15:53:47.635 DEBUG 9760 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn4: url=jdbc:h2:mem:07716aee-1219-43c5-9cde-33e3baca827c user=SA
+2023-07-16 15:53:47.637 DEBUG 9760 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn5: url=jdbc:h2:mem:07716aee-1219-43c5-9cde-33e3baca827c user=SA
+2023-07-16 15:53:47.639 DEBUG 9760 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn6: url=jdbc:h2:mem:07716aee-1219-43c5-9cde-33e3baca827c user=SA
+2023-07-16 15:53:47.650 DEBUG 9760 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn7: url=jdbc:h2:mem:07716aee-1219-43c5-9cde-33e3baca827c user=SA
+2023-07-16 15:53:47.652 DEBUG 9760 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn8: url=jdbc:h2:mem:07716aee-1219-43c5-9cde-33e3baca827c user=SA
+2023-07-16 15:53:47.653 DEBUG 9760 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn9: url=jdbc:h2:mem:07716aee-1219-43c5-9cde-33e3baca827c user=SA
+2023-07-16 15:53:47.654 DEBUG 9760 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2023-07-16 15:53:47.954  INFO 9760 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-16 15:53:48.451  INFO 9760 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-07-16 15:53:49.541  INFO 9760 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-16 15:53:50.453  INFO 9760 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-07-16 15:53:51.942  INFO 9760 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-16 15:53:52.009  INFO 9760 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-16 15:53:52.783  WARN 9760 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-16 15:53:55.257  INFO 9760 --- [    Test worker] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-library-events-listener-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = library-events-listener-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-07-16 15:53:55.786  INFO 9760 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-07-16 15:53:55.786  INFO 9760 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-07-16 15:53:55.787  INFO 9760 --- [    Test worker] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1689503035782
+2023-07-16 15:53:55.806  INFO 9760 --- [    Test worker] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-library-events-listener-group-1, groupId=library-events-listener-group] Subscribed to topic(s): library-events
+2023-07-16 15:53:55.952  INFO 9760 --- [    Test worker] e.l.LibraryEventListenerApplicationTests : Started LibraryEventListenerApplicationTests in 14.093 seconds (JVM running for 18.168)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.1.1</a> at 16-Jul-2023, 3:53:59 pm</p>
+</div>
+</div>
+</body>
+</html>

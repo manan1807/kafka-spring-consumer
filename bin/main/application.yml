@@ -1,0 +1,47 @@
+server:
+ port: 8083
+ 
+spring:
+ profiles:
+  active: local
+
+---  
+spring:
+ config:
+  activate:
+   on-profile: local
+ #kafka:
+  #consumer:
+   #bootstrap-servers: localhost:9092
+   #key-serializer: org.apache.kafka.common.serialization.StringDeserializer
+   #value-serializer: org.apache.kafka.common.serialization.StringDeserializer
+   #group-id: library-events-listener-group
+  # concurrency: 3
+ datasource:
+  url: jdbc:h2:mem:testdb
+  driver-class: org.h2.Driver
+ jpa:
+  database: h2
+  database-platform: org.hibernate.dialect.H2Dialect
+  generate-ddl: true
+ h2:
+ console:
+  enabled: true     
+   
+---
+logging:
+ level:
+ # org:
+  # springframework:
+ #   web: DEBUG
+  com: DEBUG
+---
+spring:
+ config:
+  activate:
+   on-profile: non-prod
+ kafka:
+  consumer:
+   bootstrap-servers: non-prod:9092
+   key-serializer: org.apache.kafka.common.serialization.IntegerDeserializer
+   value-serializer: org.apache.kafka.common.serialization.StringDeserializer   
