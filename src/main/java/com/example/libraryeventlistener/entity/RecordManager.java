@@ -1,5 +1,7 @@
 package com.example.libraryeventlistener.entity;
 
+import java.sql.Timestamp;
+
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -26,5 +28,6 @@ public class RecordManager {
 	@OneToOne
 	@JoinColumn(name = "libraryEventiId")
 	private LibraryEvent libraryEvent;
+	private Timestamp timestamp;
 
 }
