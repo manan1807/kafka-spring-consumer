@@ -2,15 +2,17 @@ package com.example.libraryeventlistener.service;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.OffsetAndMetadata;
 import org.apache.kafka.common.TopicPartition;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.RecoverableDataAccessException;
 import org.springframework.stereotype.Service;
 
-import com.example.libraryeventlistener.config.CustomConsumerRebalanceListener;
 import com.example.libraryeventlistener.entity.LibraryEvent;
 import com.example.libraryeventlistener.entity.PartOff;
 import com.example.libraryeventlistener.entity.RecordManager;
@@ -31,16 +33,22 @@ public class LibraryEventService {
 	private LibraryEventsRepository eventsRepository;
 	@Autowired
 	private RecordMetaDataRepo metaDataRepo;
-	@Autowired
-	private CustomConsumerRebalanceListener rebalanceListener;
 
 	public void processLibraryEvent(ConsumerRecord<String, String> record)
 			throws JsonMappingException, JsonProcessingException {
+		
+		 Set<String> invalidIdsSet = new HashSet<>();
+		
 		log.debug("*******Inside processLibraryEvent method");
 
 		var libraryEvent = mapper.readValue(record.value(), LibraryEvent.class);
 		log.debug("*****LibraryEvent: {}", libraryEvent);
 
+		if (libraryEvent != null && libraryEvent.getLibraryEventId().equals("999") && !invalidIdsSet.contains(libraryEvent.getLibraryEventId())) {
+			invalidIdsSet.add(libraryEvent.getLibraryEventId());
+			throw new RecoverableDataAccessException("Temporary Network Issue");
+		}
+		
 		switch (libraryEvent.getEventType()) {
 		case NEW:
 		case UPDATE:

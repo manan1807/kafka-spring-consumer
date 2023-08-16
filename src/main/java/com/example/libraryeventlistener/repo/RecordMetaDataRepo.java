@@ -2,7 +2,6 @@ package com.example.libraryeventlistener.repo;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.data.repository.query.Param;
 
 import com.example.libraryeventlistener.entity.RecordManager;
 
